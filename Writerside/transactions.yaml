@@ -1,0 +1,48 @@
+openapi: 3.0.0
+info:
+  version: "v0"
+  title: SIWFT API Documentation
+  description: A Documentation for the SIWFT API
+  contact:
+    email: "support@siwft.org"
+    name: "SIWFT Support"
+  license:
+    name: "CC BY NC ND 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  termsOfService: "https://siwft.org/terms"
+servers:
+  - url: https://api.siwft.org
+paths:
+  /v0/transaction/{sender}/{receiver}:
+    post:
+      summary: Initiate Transaction
+
+      parameters:
+        - in: path
+          name: sender
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: receiver
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: number
+              required:
+                - amount
+      security:
+        - Authorization: []
+      responses:
+        '200':
+          description: Transaction successful
+          content:
+            application/json: {}

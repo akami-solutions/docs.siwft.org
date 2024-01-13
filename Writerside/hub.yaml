@@ -1,0 +1,89 @@
+openapi: 3.0.0
+info:
+  version: "v0"
+  title: SIWFT API Documentation
+  description: A Documentation for the SIWFT API
+  contact:
+    email: "support@siwft.org"
+    name: "SIWFT Support"
+  license:
+    name: "CC BY NC ND 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  termsOfService: "https://siwft.org/terms"
+servers:
+  - url: https://api.siwft.org
+paths:
+  /v0/hub/{hubID}:
+    get:
+      summary: Get Hub Information
+      parameters:
+        - in: path
+          name: hubID
+          required: true
+          schema:
+            type: string
+      security:
+        - Authorization: []
+        - X-Auth-Username: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {
+              example: {
+                "success": true,
+                "message": {
+                  "name": "SIWFT",
+                  "domain": "siwft.org",
+                  "contact": "contact@siwft.org",
+                  "support": "support@siwft.org",
+                  "active": true,
+                  "apiKey": null,
+                  "created": "2024-01-07T00:25:35.426Z"
+                }
+              }
+            }
+  /v0/hub/create:
+    post:
+      summary: Create a new Hub
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                domain:
+                  type: string
+                contact:
+                  type: string
+                support:
+                  type: string
+              required:
+                - name
+                - domain
+                - contact
+                - support
+      security:
+        - Authorization: []
+      responses:
+        '200':
+          description: Hub created successfully
+          content:
+            application/json: {
+              example: {
+                "success": true,
+                "message": {
+                  "id": 10000000,
+                  "name": "Your Hub Name",
+                  "domain": "https://domain.tld",
+                  "contact": "contact@domain.tld",
+                  "support": "support@domain.tld",
+                  "active": true,
+                  "apiKey": "api_52da990g5bdg0c829db34e8c57568557fg83c524",
+                  "created": "2024-01-10T12:25:36.903Z"
+                }
+              }
+            }

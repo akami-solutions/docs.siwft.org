@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  version: "v0"
+  title: SIWFT API Documentation
+  description: A Documentation for the SIWFT API
+  contact:
+    email: "support@siwft.org"
+    name: "SIWFT Support"
+  license:
+    name: "CC BY NC ND 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  termsOfService: "https://siwft.org/terms"
+servers:
+  - url: https://api.siwft.org
+paths:
+  /v0/wallet/{walletID}:
+    get:
+      summary: Get Wallet Information
+      parameters:
+        - in: path
+          name: walletID
+          required: true
+          schema:
+            type: string
+      security:
+        - Authorization: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {
+              example: {
+                "success": true,
+                "message": {
+                  "username": "Your Username",
+                  "isActive": true,
+                  "isEnterprise": false,
+                  "balance": "0.00",
+                  "key": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+                }
+              }
+            }
+  /v0/wallet/create:
+    post:
+      summary: Create a new Wallet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                cc:
+                  type: string
+              required:
+                - name
+                - cc
+      security:
+        - Authorization: []
+      responses:
+        '200':
+          description: Wallet created successfully
+          content:
+            application/json: {
+              example: {
+                "success": true,
+                "message": {
+                  "name": "Your Username",
+                  "country": "AT",
+                  "hubId": 10000000,
+                  "walletId": "9769127996",
+                  "walletPP": 61,
+                  "active": true,
+                  "balance": "0.00",
+                  "authKey": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+                }
+              }
+            }
