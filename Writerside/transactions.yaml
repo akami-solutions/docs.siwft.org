@@ -16,16 +16,31 @@ paths:
   /v0/transaction/{sender}/{receiver}:
     post:
       summary: Initiate Transaction
+      description: "Create a transaction between two parties"
 
       parameters:
         - in: path
           name: sender
           required: true
+          description: "The IWAN from the sender"
           schema:
             type: string
         - in: path
           name: receiver
           required: true
+          description: "The receiver IWAN"
+          schema:
+            type: string
+        - in: header
+          name: "Authorization"
+          required: true
+          description: "The authorization key from the sender"
+          schema:
+            type: string
+        - in: header
+          name: "X-Auth-Username"
+          required: true
+          description: "The user name of the sender"
           schema:
             type: string
       requestBody:
@@ -37,12 +52,44 @@ paths:
               properties:
                 amount:
                   type: number
+                  format: float
+                  example: 13.37
+                description:
+                  type: string
+                  example: "Hello World"
               required:
                 - amount
-      security:
-        - Authorization: []
       responses:
         '200':
           description: Transaction successful
           content:
-            application/json: {}
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                    default: false
+                  message:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: "transaction_34210bja3421834jah6jhh3h67hd34j57bh24301"
+                      sender:
+                        type: string
+                        example: "AT10000000123456789012"
+                      receiver:
+                        type: string
+                        example: "AT10000000098765432112"
+                      amount:
+                        type: integer
+                        format: float
+                        example: 13.37
+                      description:
+                        type: string
+                        example: "Hello World"
+                      created:
+                        type: string
+                        format: 'date-time'

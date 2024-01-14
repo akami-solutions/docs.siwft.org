@@ -16,33 +16,69 @@ paths:
   /v0/wallet/{walletID}:
     get:
       summary: Get Wallet Information
+      description: Get information about a wallet. Use your authorization key and your wallet name to see the private data as well
       parameters:
         - in: path
           name: walletID
           required: true
+          description: "The wallet ID from which you want the data."
           schema:
             type: string
-      security:
-        - Authorization: []
+        - in: header
+          name: Authorization
+          required: false
+          description: "Your authorization key that you received from your Wallet Hub"
+          schema:
+            type: string
+        - in: header
+          name: X-Auth-Username
+          required: false
+          description: "Your username that you entered when creating the wallet"
+          schema:
+            type: string
       responses:
         '200':
           description: Successful response
           content:
-            application/json: {
-              example: {
-                "success": true,
-                "message": {
-                  "username": "Your Username",
-                  "isActive": true,
-                  "isEnterprise": false,
-                  "balance": "0.00",
-                  "key": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
-                }
-              }
-            }
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: object
+                    properties:
+                      username:
+                        type: string
+                        example: "Your Name"
+                      isActive:
+                        type: boolean
+                        default: true
+                      isEnterprise:
+                        type: boolean
+                        default: false
+                      balance:
+                        type: integer
+                        format: float
+                        example: 12.22
+                        default: 00.00
+                      key:
+                        type: string
+                        example: "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+
   /v0/wallet/create:
     post:
       summary: Create a new Wallet
+      description: Create a new wallet
+      parameters:
+        - in: header
+          name: Authorization
+          required: true
+          description: "The Wallet Hub's Authorization Token"
+          schema:
+            type: string
       requestBody:
         required: true
         content:
@@ -52,29 +88,61 @@ paths:
               properties:
                 name:
                   type: string
+                  description: "The username of the wallet. Is required to receive private data"
+                  example: "Max Mustermann"
                 cc:
                   type: string
+                  description: "The two-digit country code of the wallet owner"
+                  example: "AT"
+                  maxLength: 2
               required:
                 - name
                 - cc
-      security:
-        - Authorization: []
       responses:
         '200':
           description: Wallet created successfully
           content:
-            application/json: {
-              example: {
-                "success": true,
-                "message": {
-                  "name": "Your Username",
-                  "country": "AT",
-                  "hubId": 10000000,
-                  "walletId": "9769127996",
-                  "walletPP": 61,
-                  "active": true,
-                  "balance": "0.00",
-                  "authKey": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
-                }
-              }
-            }
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                  message:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: "Max Mustermann"
+                      country:
+                        type: string
+                        maxLength: 2
+                        example: "AT"
+                      hubId:
+                        type: integer
+                        format: int32
+                        maxLength: 8
+                        example: 10000000
+                      walletId:
+                        maxLength: 10
+                        type: integer
+                        format: int32
+                        example: 1234567890
+                      walletPP:
+                        maxLength: 2
+                        type: integer
+                        format: int32
+                        example: 12
+                      active:
+                        type: boolean
+                        example: true
+                        default: true
+                      balance:
+                        type: integer
+                        format: float
+                        example: 13.37
+                        default: 00.00
+                      authKey:
+                        type: string
+                        example: "key_h246375h24672510ffj8g3hh24678g2467dz4275"
