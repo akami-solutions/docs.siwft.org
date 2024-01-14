@@ -4,7 +4,7 @@ on:
   # If specified, the workflow will be triggered automatically once you push to the `main` branch.
   # Replace `main` with your branch’s name
   push:
-    branches: ["main"]
+    branches: ["production"]
   # Specify to run a workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
@@ -17,7 +17,7 @@ env:
   # Name of module and id separated by a slash
   INSTANCE: Writerside/adoc
   # Replace HI with the ID of the instance in capital letters
-  ARTIFACT: webHelpHI2-all.zip
+  ARTIFACT: webHelpADOC2-all.zip
   # Writerside docker image version
   DOCKER_VERSION: 232.10275
   # Add the variable below to upload Algolia indexes
