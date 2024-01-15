@@ -1,6 +1,7 @@
 # Wallet Hub
 
-<api-doc openapi-path="../hub.yaml">
+> <b>You want to be a Wallet Hub?<br/></b>
+> If you want to be a Wallet Issuer, then contact us at <a href="mailto:support@siwft.org">support@siwft.org</a> 
 
 <api-endpoint openapi-path="../hub.yaml" endpoint="/v0/hub/{hubID}" method="GET">
     <response type="200">
