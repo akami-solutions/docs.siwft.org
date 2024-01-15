@@ -1,0 +1,16 @@
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <primary-color>purple</primary-color>
+        <noindex-content>false</noindex-content>
+        <versions-switcher>https://api.siwft.org/version-helper.json</versions-switcher>
+    </variables>
+    <build-profile instance="adoc"/>
+    <footer>
+        <social type="email" href="mailto:support@siwft.org"/>
+        <copyright> SIWFT 2024</copyright>
+        <link href="https://github.com/SIWFT/.github/blob/main/profile/PRIVACY.md">Privacy Policy</link>
+        <link href="https://siwft.org">Website</link>
+        <link href="https://siwft.org/imprint/">Impressum</link>
+    </footer>
+</buildprofiles>
