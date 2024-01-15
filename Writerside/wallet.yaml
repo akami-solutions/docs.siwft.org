@@ -67,7 +67,6 @@ paths:
                       key:
                         type: string
                         example: "key_h246375h24672510ffj8g3hh24678g2467dz4275"
-
   /v0/wallet/create:
     post:
       summary: Create a new Wallet
