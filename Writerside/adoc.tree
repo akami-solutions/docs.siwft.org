@@ -3,8 +3,8 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="adoc"
-                 name="API Docs"
-                 start-page="api-docs.md">
+                  name="API Docs"
+                  start-page="api-docs.md">
 
     <toc-element topic="api-docs.md"/>
     <toc-element topic="API-quickstart.md"/>
