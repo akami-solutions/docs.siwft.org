@@ -9,6 +9,9 @@ Wallet Hub->>SIWFT: Sends the necessary data to SIWFT
 SIWFT->>Wallet Hub: Processes the transaction and responds with useful data
 Wallet Hub->>+Wallet: Passes on that the transaction was successful or not.
 </code-block>
+> Please keep in mind that transactions over 10.000 needs to be Verified manually by SIWFT
+> 
+{style="note"}
 <api-endpoint openapi-path="../transactions.yaml" endpoint="/v0/transaction/{sender}/{receiver}" method="POST">
     <response type="200">
         <sample>
@@ -37,7 +40,55 @@ Wallet Hub->>+Wallet: Passes on that the transaction was successful or not.
         </sample>
     </response>
 </api-endpoint>
-
-<!--<api-doc openapi-path="../transactions.yaml">
-    
-</api-doc>-->
+>
+> This endpoint was newly added on 22.01.2024
+<api-endpoint openapi-path="../transactions.yaml" endpoint="/v0/transaction/" method="GET">
+    <response type="200">
+        <sample>
+{
+	"success": true,
+	"message": [
+		{
+			"id": "transaction_114e5793868a8480411c73e3d45b6cd7cee8c012",
+			"from": "AT10000000098765432112",
+			"to": "AT10000000123456789012",
+			"amount": "13.37",
+			"message": "Hello World #1",
+			"date": "2024-01-08T12:09:19.273Z",
+			"holdBack": false
+		},
+		{
+			"id": "transaction_a33e801d40225b99f34f988404f06259b3f98b82",
+			"from": "AT10000000123456789012",
+			"to": "AT10000000098765432112",
+			"amount": "13.37",
+			"message": "Hello World #2",
+			"date": "2024-01-08T12:11:05.486Z",
+			"holdBack": true
+		}
+	]
+}
+        </sample>
+    </response>
+</api-endpoint>
+>
+> This endpoint was newly added on 22.01.2024
+<api-endpoint openapi-path="../transactions.yaml" endpoint="/v0/transaction/{transactionId}" method="GET">
+    <response type="200">
+        <sample>
+{
+	"success": true,
+	"message":
+		{
+			"id": "transaction_114e5793868a8480411c73e3d45b6cd7cee8c012",
+			"from": "AT10000000098765432112",
+			"to": "AT10000000123456789012",
+			"amount": "13.37",
+			"message": "Hello World #1",
+			"date": "2024-01-08T12:09:19.273Z",
+			"holdBack": false
+		}
+}
+        </sample>
+    </response>
+</api-endpoint>

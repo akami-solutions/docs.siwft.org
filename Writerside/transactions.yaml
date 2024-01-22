@@ -93,3 +93,144 @@ paths:
                       created:
                         type: string
                         format: 'date-time'
+  /v0/transaction/:
+    get:
+      summary: Get own transactions
+      description: "Get a list of all your Transactions you made"
+      parameters:
+        - in: header
+          name: "Authorization"
+          required: true
+          description: "The authorization key from the sender"
+          schema:
+            type: string
+        - in: header
+          name: "X-Auth-Username"
+          required: true
+          description: "The user name of the sender"
+          schema:
+            type: string
+        - in: header
+          name: "X-Auth-Iwan"
+          required: true
+          description: "The users IWAN"
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+                    default: false
+                  message:
+                    type: array
+                    properties:
+                      0:
+                        type: boolean
+                        properties:
+                          id:
+                            type: string
+                            example: "transaction_114e5793868a8480411c73e3d45b6cd7cee8c012"
+                          from:
+                            type: string
+                            example: "AT10000000123456789012"
+                          to:
+                            type: string
+                            example: "AT10000000098765432112"
+                          amount:
+                            type: integer
+                            format: float
+                            example: 13.37
+                          message:
+                            type: string
+                            example: "Hello World"
+                          date:
+                            type: string
+                            format: 'date-time'
+                          status:
+                            type: boolean
+                            example: true
+                            default: false
+                      1:
+                        type: boolean
+                        properties:
+                          id:
+                            type: string
+                            example: "transaction_114e5793868a8480411c73e3d45b6cd7cee8c012"
+                          from:
+                            type: string
+                            example: "AT10000000123456789012"
+                          to:
+                            type: string
+                            example: "AT10000000098765432112"
+                          amount:
+                            type: integer
+                            format: float
+                            example: 13.37
+                          message:
+                            type: string
+                            example: "Hello World"
+                          date:
+                            type: string
+                            format: 'date-time'
+                          status:
+                            type: boolean
+                            example: true
+                            default: false
+  /v0/transaction/{transactionId}:
+    get:
+      summary: "Get the Information of a Single Transaction"
+      parameters:
+        - in: header
+          name: "Authorization"
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: "Successful request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example:
+                      true
+                    default: false
+                  message:
+                    type: object
+                    properties:
+                      message:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            example: "transaction_114e5793868a8480411c73e3d45b6cd7cee8c012"
+                          from:
+                            type: string
+                            example: "AT10000000123456789012"
+                          to:
+                            type: string
+                            example: "AT10000000098765432112"
+                          amount:
+                            type: integer
+                            format: float
+                            example: 13.37
+                          message:
+                            type: string
+                            example: "Hello World"
+                          date:
+                            type: string
+                            format: 'date-time'
+                          status:
+                            type: boolean
+                            example: true
+                            default: false

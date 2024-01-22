@@ -1,5 +1,17 @@
 # Changes
 
+## January 22, 2024
+
+<table>
+<tr>
+<td>Method</td>
+<td>Changes</td>
+</tr>
+<tr>
+<td><a href="Transactions.md"></a></td>
+<td>Implemented following new Endpoints: <ul><li>Get all your Transactions</li><li>Get a Single Transaction</li></ul>And also implemented Transaction hold-back Limit</td>
+</tr>
+</table>
 <!-- Maintain a changelog or release notes section
 to inform users about updates, changes, and new features in different API versions -->
 ## January 14, 2024
