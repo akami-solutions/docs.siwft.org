@@ -9,7 +9,6 @@ Wallet Hub->>SIWFT: Sends the necessary data to SIWFT
 SIWFT->>Wallet Hub: Processes the transaction and responds with useful data
 Wallet Hub->>+Wallet: Passes on that the transaction was successful or not.
 </code-block>
-
 > Please keep in mind that transactions over 10.000 needs to be Verified manually by SIWFT
 > 
 {style="note"}
