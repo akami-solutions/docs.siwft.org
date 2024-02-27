@@ -9,8 +9,8 @@
     <footer>
         <social type="email" href="mailto:support@siwft.org"/>
         <copyright> SIWFT 2024</copyright>
-        <link href="https://github.com/SIWFT/.github/blob/main/profile/PRIVACY.md">Privacy Policy</link>
         <link href="https://docs.siwft.org/privacy-policy.html">Privacy Policy</link>
+        <link href="https://docs.siwft.org/tos-a-u.html">Terms of Service and Use</link>
         <link href="https://siwft.org">Website</link>
         <link href="https://siwft.org/imprint/">Impressum</link>
     </footer>
