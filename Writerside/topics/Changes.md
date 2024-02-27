@@ -1,5 +1,14 @@
 # Changes
 
+## February 27, 2024
+
+| Method                           | Changes                               |
+|----------------------------------|---------------------------------------|
+| <a href="Privacy-Policy.md"></a> | Added SIWFT Privacy Policy            |
+| <a href="tos-a-u.md"></a>        | Added SIWFT Terms of Service and Use  |
+| <a href="api-docs.md"></a>       | Added more Information's about SIWFT  |
+
+
 ## January 22, 2024
 
 <table>
