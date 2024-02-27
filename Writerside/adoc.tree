@@ -15,5 +15,7 @@
             <toc-element topic="Transactions.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="tos-a-u.md"/>
+    <toc-element topic="Privacy-Policy.md"/>
     <toc-element topic="Changes.md"/>
 </instance-profile>
