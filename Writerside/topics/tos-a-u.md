@@ -4,7 +4,43 @@
 
 * The Wallet is a game and not a real payment method. It should not be associated with real money
 * The currency of the Wallet does not have a unique name or symbol and should not be confused with the names or symbols of real currencies.
-* The target audience of the Wallet are teenagers, children and adults.
+* The target audience of the Wallet are teenagers, children and adults. Here's a list of Countries with the min Age they are allowed to use your and this Service:
+
+| Country               | Age |
+|-----------------------|-----|
+| South Korea           | 14+ |
+| Vietnam               | 15+ |
+| Aruba                 | 16+ |
+| Caribbean Netherlands | 16+ |
+| Curaçao               | 16+ |
+| Sint Maarten          | 16+ |
+| Austria               | 14+ |
+| Bulgaria              | 14+ |
+| Croatia               | 14+ |
+| Cyprus                | 14+ |
+| Czech Republic        | 15+ |
+| France                | 15+ |
+| Germany               | 16+ |
+| Greece                | 15+ |
+| Hungary               | 16+ |
+| Ireland               | 16+ |
+| Italy                 | 14+ |
+| Lithuania             | 14+ |
+| Luxembourg            | 16+ |
+| Netherlands           | 16+ |
+| Poland                | 16+ |
+| Romania               | 16+ |
+| San Marino            | 16+ |
+| Serbia                | 15+ |
+| Slovakia              | 16+ |
+| Slovenia              | 16+ |
+| Spain                 | 14+ |
+| Chile:                | 14+ |
+| Colombia:             | 14+ |
+| Peru:                 | 14+ |
+| Venezuela:            | 14+ |
+| All other Countries   | 13+ |
+
 
 ## Guidelines for Wallet Hubs:
 * Wallet Hubs are required to verify themselves before registering.
@@ -13,6 +49,7 @@
 * Wallet Hubs are required to take action against fraud and digital asset laundering.
 * Wallet Hubs are required to Inform their Wallet Holders on our [Privacy](https://github.com/SIWFT/.github/blob/main/profile/PRIVACY.md) and [ToSaU](https://github.com/SIWFT/.github/blob/main/profile/TOSaU.md) changes and also requires to accept them. Wallet Holders are liable for this violation and not we.
 * Wallet Hubs are required to use and implement the prime-rate System.
+* Wallet Hubs are required to take actions against Wallet Holders that are younger than allowed and report them to the SIWFT.
 
 ## Guidelines for Wallet Holders:
 * Customers are required to provide their personal information truthfully
