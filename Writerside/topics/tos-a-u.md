@@ -48,13 +48,19 @@
 * Wallet Hubs are required to make their transactions transparent.
 * Wallet Hubs are required to take action against fraud and digital asset laundering.
 * Wallet Hubs are required to Inform their Wallet Holders on our [Privacy](https://github.com/SIWFT/.github/blob/main/profile/PRIVACY.md) and [ToSaU](https://github.com/SIWFT/.github/blob/main/profile/TOSaU.md) changes and also requires to accept them. Wallet Holders are liable for this violation and not we.
-* Wallet Hubs are required to use and implement the prime-rate System.
 * Wallet Hubs are required to take actions against Wallet Holders that are younger than allowed and report them to the SIWFT.
 
 ## Guidelines for Wallet Holders:
 * Customers are required to provide their personal information truthfully
 * Customers are required to comply with the Wallet's guidelines.
 * Customers are required to keep their Wallets safe.
+
+## Interest and fees.
+
+* Prime Rate: Wallet Hubs müssen den Leitzins (Prime Rate) von SIWFT bei der Festlegung der Zinssätze für ihre Kunden berücksichtigen. Der Leitzins beeinflusst die Kosten für die Kreditaufnahme und die Renditen für Spareinlagen.
+* Zinszahlungen: Wallet Hubs sind verpflichtet, Zinsen auf die von ihren Kunden gehaltenen digitalen Vermögenswerte zu zahlen. Die Höhe der Zinsen kann je nach Art des Vermögenswerts und dem gewählten Wallet Hub variieren.
+* Gebühren: Wallet Hubs können Gebühren für verschiedene Dienstleistungen erheben, z. B. für Transaktionen, Kontoführung und Währungsumtausch. Diese Gebühren müssen transparent und klar für die Kunden ersichtlich sein.
+
 
 ## Special Guidelines:
 * It is prohibited to use the Wallet for illegal activities, such as money laundering, terrorist financing, distribution of child pornography or other criminal acts and physical objects.
