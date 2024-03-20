@@ -18,6 +18,7 @@
 | /                              | Disabled caching                                       |
 | /                              | Improved Database actions                              |
 
+
 ## February 27, 2024
 
 | Method                           | Changes                               |
