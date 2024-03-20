@@ -10,6 +10,7 @@
     <toc-element topic="API-quickstart.md"/>
     <toc-element topic="API-reference.md">
         <toc-element topic="0.md">
+            <toc-element topic="prime-rate.md"/>
             <toc-element topic="WalletHub.md"/>
             <toc-element topic="Wallets.md"/>
             <toc-element topic="Transactions.md"/>

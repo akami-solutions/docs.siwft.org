@@ -1,5 +1,18 @@
 # Changes
 
+
+## March 09, 2024
+
+| Method                         | Changes                                                |
+|--------------------------------|--------------------------------------------------------|
+| <a href="prime-rate.md"></a>   | Added Prime Rate Endpoint and Documentation EARLY BETA |
+| <a href="tos-a-u.md"></a>      | Updated Wallet Hubs Terms of Service and Use           |
+| /                              | Fixed some Error Reporting Issues                      |
+| /                              | Improved Code Quality                                  |
+| /                              | Disabled caching                                       |
+| /                              | Improved Database actions                              |
+
+
 ## February 27, 2024
 
 | Method                           | Changes                               |

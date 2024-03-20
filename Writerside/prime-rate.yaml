@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  version: "v0"
+  title: SIWFT API Documentation
+  description: A Documentation for the SIWFT API
+  contact:
+    email: "support@siwft.org"
+    name: "SIWFT Support"
+  license:
+    name: "CC BY NC ND 4.0"
+    url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+  termsOfService: "https://siwft.org/terms"
+servers:
+  - url: https://api.siwft.org
+paths:
+  /prime-rate:
+    get:
+      summary: Returns an integer of the current prime rate
+      responses:
+        '200':
+          description: "{'value': 0}"
