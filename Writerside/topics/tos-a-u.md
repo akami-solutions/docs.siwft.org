@@ -12,7 +12,10 @@
 * Wallet Hubs are required to make their transactions transparent.
 * Wallet Hubs are required to take action against fraud and digital asset laundering.
 * Wallet Hubs are required to Inform their Wallet Holders on our [Privacy](https://github.com/SIWFT/.github/blob/main/profile/PRIVACY.md) and [ToSaU](https://github.com/SIWFT/.github/blob/main/profile/TOSaU.md) changes and also requires to accept them. Wallet Holders are liable for this violation and not we.
+
 * Wallet Hubs are required to use and implement the prime-rate System.
+
+
 
 ## Guidelines for Wallet Holders:
 * Customers are required to provide their personal information truthfully

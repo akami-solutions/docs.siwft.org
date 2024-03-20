@@ -1,5 +1,6 @@
 # Changes
 
+
 ## March 09, 2024
 
 | Method                         | Changes                                                |
@@ -10,6 +11,7 @@
 | /                              | Improved Code Quality                                  |
 | /                              | Disabled caching                                       |
 | /                              | Improved Database actions                              |
+
 
 ## February 27, 2024
 
