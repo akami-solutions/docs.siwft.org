@@ -1,5 +1,11 @@
 # Changes
 
+## March 20, 2024
+| Method                           | Changes                                                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------------------------------|
+| <a href="Privacy-Policy.md"></a> | Fixed missing text                                                                                      |
+| <a href="tos-a-u.md"></a>        | Updated ToS and Use                                                                                     |
+| <a href="prime-rate.md"></a>     | <ul><li>Moved from `v0` to `API Reference`</li><li>Rewrote the Text to be more understandable</li></ul> |
 
 ## March 09, 2024
 

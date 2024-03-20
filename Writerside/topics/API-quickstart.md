@@ -44,3 +44,31 @@ If the request is successful, you should see a response with similar data:
 ```
 
 If you have not defined a username or authorization, the key would be set to "null"
+
+## How to get digital assets
+
+> WARNING!<br/>
+> This area is under construction
+{style="warning"}
+
+### As a Wallet Hub
+
+Upon receiving a Wallet Hub from SIWFT, the said Wallet Hub will be continuously provided with Digital Assets by SIWFT.
+
+This credit will only be offered by SIWFT until they deem that there are enough Digital Assets in circulation. Once this is achieved, the respective Wallethubs will be informed accordingly.
+
+### Restrictions
+
+Wallet Hubs are not allowed to spend this credit for anything other than their customers. This can include:
+
+* Welcome Bonus
+* Giveaway (only after 100-200 Wallets)
+* Others upon request
+
+It should also be noted that the credit should not only go to a few people, but to several.
+### As a Wallet Holder
+
+SIWFT is not authorized to credit individual wallets or make changes to a wallet without a legitimate reason. However, Wallet Hubs are authorized to restrict your wallet and its rights.
+> Info<br/>
+> Sollte dir auffallen das dein Wallet Hub gegen unsere Richtlinien, gegen Rechte oder anderweitig schlecht oder komisch auffällt kann man jederzeit die SIWFT über [E-Mail](mailto:abuse@siwft.org) Informieren.
+{style="info"}

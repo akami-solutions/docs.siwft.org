@@ -24,7 +24,9 @@
     - Receiver**
     - Amount**
     - Description**
-<small>*, is visible in the public<br/>**, is only disclosed if the Personal Auth Key or API Key is specified</small>
+
+_\*, is visible in the public<br/>\*\*, is only disclosed if the Personal Auth Key or API Key is specified_
+
 # How we use your data
 
 ## We use your data to:
@@ -49,6 +51,7 @@
 * Delete your data: You can delete your data by contacting us at data@siwft.org
 
 ## Website specific
+
 ### Our Website
 
 * All SIWFT websites use Cloudflare services to improve page load speed, page security, and more.
