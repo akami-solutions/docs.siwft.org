@@ -12,12 +12,12 @@
     - Wallet creation date
 * Wallet hub-specific data:
     - Unique wallet hub identifier (8 digits)*
-    - Wallet hub name
+    - Wallet hub name*
     - Wallet hub domain
-    - Wallet hub support email
+    - Wallet hub support email*
     - Wallet hub contact email**
     - Wallet hub creation date
-    - Wallet hub API key
+    - Wallet hub API key**
 * Transaction-specific data:
     - Unique transaction ID**
     - Sender**
