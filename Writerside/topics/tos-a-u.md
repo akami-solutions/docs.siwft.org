@@ -57,10 +57,9 @@
 
 ## Interest and fees.
 
-* Prime Rate: Wallet Hubs müssen den Leitzins (Prime Rate) von SIWFT bei der Festlegung der Zinssätze für ihre Kunden berücksichtigen. Der Leitzins beeinflusst die Kosten für die Kreditaufnahme und die Renditen für Spareinlagen.
-* Zinszahlungen: Wallet Hubs sind verpflichtet, Zinsen auf die von ihren Kunden gehaltenen digitalen Vermögenswerte zu zahlen. Die Höhe der Zinsen kann je nach Art des Vermögenswerts und dem gewählten Wallet Hub variieren.
-* Gebühren: Wallet Hubs können Gebühren für verschiedene Dienstleistungen erheben, z. B. für Transaktionen, Kontoführung und Währungsumtausch. Diese Gebühren müssen transparent und klar für die Kunden ersichtlich sein.
-
+* Prime Rate: Wallet Hubs must take into account SIWFT's prime rate when setting interest rates for their customers. The prime rate affects the cost of borrowing and returns on savings deposits.
+* Interest payments: Wallet Hubs are required to pay interest on digital assets held by their customers. The amount of interest may vary depending on the type of asset and the wallet hub chosen.
+* Fees: Wallet hubs may charge fees for various services, e.g. for transactions, account management and currency exchange. These fees must be transparent and clearly visible to customers.
 
 ## Special Guidelines:
 * It is prohibited to use the Wallet for illegal activities, such as money laundering, terrorist financing, distribution of child pornography or other criminal acts and physical objects.

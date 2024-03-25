@@ -1,5 +1,13 @@
 # Changes
 
+## March 25, 2024
+
+| Method | Changes |
+|--------|---------|
+| <a href="tos-a-u.md"></a> | Fixed missing translation |
+| <a href="API-quickstart.md"></a> | Fixed missing translation |
+| <a href="Privacy-Policy.md"></a> | Added missing stars |
+
 ## March 20, 2024
 | Method                           | Changes                                                                                                 |
 |----------------------------------|---------------------------------------------------------------------------------------------------------|
