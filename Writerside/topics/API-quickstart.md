@@ -70,5 +70,5 @@ It should also be noted that the credit should not only go to a few people, but 
 
 SIWFT is not authorized to credit individual wallets or make changes to a wallet without a legitimate reason. However, Wallet Hubs are authorized to restrict your wallet and its rights.
 > Info<br/>
-> Sollte dir auffallen das dein Wallet Hub gegen unsere Richtlinien, gegen Rechte oder anderweitig schlecht oder komisch auffällt kann man jederzeit die SIWFT über [E-Mail](mailto:abuse@siwft.org) Informieren.
+> If you notice that your wallet hub violates our guidelines, violates rights or is otherwise bad or strange, you can inform SIWFT at any time via [e-mail](mailto:abuse@siwft.org).
 {style="info"}
