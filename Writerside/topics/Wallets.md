@@ -16,7 +16,13 @@
         </sample>
     </response>
 </api-endpoint>
-<api-endpoint openapi-path="../hub.yaml" endpoint="/v0/hub/create" method="POST">
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH">
+    <response type="200">
+        <sample>
+null
+</sample>
+</response>
+</api-endpoint>
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/create" method="POST">
     <response type="200">
         <sample>
