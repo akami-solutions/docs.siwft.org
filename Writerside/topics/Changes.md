@@ -1,12 +1,18 @@
 # Changes
 
+## March 27, 2024
+
+| Method                    | Changes                                                                                                                                        |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a href="Wallets.md"></a> | <ul><li>Fixed displaced api endpoint. (WalletHub Creation was defined instead of wallet creation)</li><li>Pre-Added new API Endpoint</li></ul> |
+
 ## March 25, 2024
 
-| Method | Changes |
-|--------|---------|
-| <a href="tos-a-u.md"></a> | Fixed missing translation |
-| <a href="API-quickstart.md"></a> | Fixed missing translation |
-| <a href="Privacy-Policy.md"></a> | Added missing stars |
+| Method                           | Changes                    |
+|----------------------------------|----------------------------|
+| <a href="tos-a-u.md"></a>        | Fixed missing translation  |
+| <a href="API-quickstart.md"></a> | Fixed missing translation  |
+| <a href="Privacy-Policy.md"></a> | Added missing stars        |
 
 ## March 20, 2024
 | Method                           | Changes                                                                                                 |

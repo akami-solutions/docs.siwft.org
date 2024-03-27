@@ -67,6 +67,45 @@ paths:
                       key:
                         type: string
                         example: "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+    patch:
+      summary: Update Wallet Username
+      description: Endpoint to update the Username of the Walle
+      parameters:
+        - in: path
+          name: walletID
+          required: true
+          description: "The wallet ID from which you want the data."
+          schema:
+            type: string
+        - in: header
+          name: Authorization
+          required: false
+          description: "Your authorization key that you received from your Wallet Hub"
+          schema:
+            type: string
+        - in: header
+          name: X-Auth-Username
+          required: false
+          description: "Your username that you entered when creating the wallet"
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json: {
+            example:
+              {
+                "username": "Your Username"
+              }
+          }
+      responses:
+        200:
+          description: Success request
+          content:
+            application/json:
+              schema:
+                example:
+
   /v0/wallet/create:
     post:
       summary: Create a new Wallet
