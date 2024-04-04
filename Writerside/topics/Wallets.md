@@ -1,5 +1,5 @@
 # Wallets
-
+## Get a Wallet
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="GET">
     <response type="200">
         <sample lang="JSON">
@@ -16,6 +16,11 @@
         </sample>
     </response>
 </api-endpoint>
+## Update a Wallets Username
+> WARNING
+> 
+> New Since 15.04.2024
+{style="note"}
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH">
     <response type="200">
         <sample>
@@ -23,6 +28,8 @@ null
 </sample>
 </response>
 </api-endpoint>
+## Create a new Wallet
+
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/create" method="POST">
     <response type="200">
         <sample>
@@ -41,4 +48,18 @@ null
 }
         </sample>
     </response>
+</api-endpoint>
+## Delete a Wallet
+> WARNING
+> 
+> New Since 15.04.2024
+{style="note"}
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}/delete" method="DELETE">
+<response type="200">
+<sample>
+{
+"success": true
+}
+</sample>
+</response>
 </api-endpoint>

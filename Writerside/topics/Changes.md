@@ -1,5 +1,11 @@
 # Changes
 
+## April 04, 2024
+
+| Method                    | Changes                     |
+|---------------------------|-----------------------------|
+| <a href="Wallets.md"></a> | Added new `delete` endpoint |
+
 ## March 27, 2024
 
 | Method                    | Changes                                                                                                                                        |
