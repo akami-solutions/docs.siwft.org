@@ -105,7 +105,48 @@ paths:
             application/json:
               schema:
                 example:
-
+  /v0/wallet/{walletID}/delete:
+    delete:
+      description: Delete a Wallet permanently. This deletions is permanently
+      parameters:
+        - in: header
+          name: Authorization
+          required: true
+          description: "Your Authorization Key. Can be a WalletHub-, Agent- or Wallet Key"
+          schema:
+            type: string
+      responses:
+        '200':
+          description: "Deletion Successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
+        '401':
+          description: "Access Denied"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: false
+                  error:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                        example: "Access Denied"
+                      code:
+                        type: integer
+                        example: 401
+        500:
+          description: "Critical Internal Server Error"
   /v0/wallet/create:
     post:
       summary: Create a new Wallet
