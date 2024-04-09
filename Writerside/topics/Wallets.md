@@ -1,5 +1,13 @@
 # Wallets
 ## Get a Wallet
+> **WARNING**
+> 
+> SINCE THE 15.04.2024 RELEASE SERVER-SIDE CACHE IS ENABLED AND CAN LEAD TO OUTDATED OUTPUT. 
+> 
+>USE `Pragma:no-cache` HEADER TO PREVENT SERVER-SIDE CACHED DATA
+{style="warning"}
+
+
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="GET">
     <response type="200">
         <sample lang="JSON">

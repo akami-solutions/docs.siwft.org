@@ -2,7 +2,9 @@
 
 > **WARNING**
 >
-> This system has been around for a short time, so there may be changes and errors in the documentation.
+> SINCE THE 15.04.2024 RELEASE SERVER-SIDE CACHE IS ENABLED AND CAN LEAD TO OUTDATED OUTPUT.
+>
+>USE `Pragma:no-cache` HEADER TO PREVENT SERVER-SIDE CACHED DATA
 {style="warning"}
 
 Since March 15, 2024, SIWFT has a system called a "prime rate." This might sound complicated, but let's break it down!
