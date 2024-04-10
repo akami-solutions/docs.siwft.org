@@ -17,6 +17,10 @@ There are two ways in which you can process the request.
 To request only public data, you don't need your username or wallet key, just your IWAN.
 However, if you want to have all data then both data are required
 
+## Caching
+
+Since the `04152024-001` release, the output is cached on the server side for some endpoints. The cache is currently 300 seconds. To prevent the server-side cache use the `Pragma: no-cache` header in your GET request
+
 ## Making Your First Request
 
 ```http

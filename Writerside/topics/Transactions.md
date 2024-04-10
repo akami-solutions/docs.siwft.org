@@ -40,8 +40,6 @@ Wallet Hub->>+Wallet: Passes on that the transaction was successful or not.
         </sample>
     </response>
 </api-endpoint>
->
-> This endpoint was newly added on 22.01.2024
 <api-endpoint openapi-path="../transactions.yaml" endpoint="/v0/transaction/" method="GET">
     <response type="200">
         <sample>
@@ -71,8 +69,7 @@ Wallet Hub->>+Wallet: Passes on that the transaction was successful or not.
         </sample>
     </response>
 </api-endpoint>
->
-> This endpoint was newly added on 22.01.2024
+
 <api-endpoint openapi-path="../transactions.yaml" endpoint="/v0/transaction/{transactionId}" method="GET">
     <response type="200">
         <sample>

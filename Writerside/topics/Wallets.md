@@ -1,33 +1,5 @@
 # Wallets
-## Get a Wallet
-<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="GET">
-    <response type="200">
-        <sample lang="JSON">
-{
-    "success": true,
-    "message": {
-        "username": "Your Username",
-        "isActive": true,
-        "isEnterprise": false,
-        "balance": 13.37,
-        "key": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
-    }
-}
-        </sample>
-    </response>
-</api-endpoint>
-## Update a Wallets Username
-> WARNING
-> 
-> New Since 15.04.2024
-{style="note"}
-<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH">
-    <response type="200">
-        <sample>
-null
-</sample>
-</response>
-</api-endpoint>
+
 ## Create a new Wallet
 
 <api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/create" method="POST">
@@ -49,12 +21,48 @@ null
         </sample>
     </response>
 </api-endpoint>
+
+## Get a Wallet
+> **WARNING**
+> 
+> SINCE THE 15.04.2024 RELEASE SERVER-SIDE CACHE IS ENABLED AND CAN LEAD TO OUTDATED OUTPUT. 
+> 
+>USE `Pragma:no-cache` HEADER TO PREVENT SERVER-SIDE CACHED DATA
+{style="warning"}
+
+
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="GET">
+    <response type="200">
+        <sample lang="JSON">
+{
+    "success": true,
+    "message": {
+        "username": "Your Username",
+        "isActive": true,
+        "isEnterprise": false,
+        "balance": 13.37,
+        "key": "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+    }
+}
+        </sample>
+    </response>
+</api-endpoint>
+
+## Update a Wallets Username
+> WARNING
+>
+> New Since 15.04.2024
+{style="note"}
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH" generate-samples="true">
+
+</api-endpoint>
+
 ## Delete a Wallet
 > WARNING
 > 
 > New Since 15.04.2024
 {style="note"}
-<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}/delete" method="DELETE">
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}/delete" method="DELETE" generate-samples="true">
 <response type="200">
 <sample>
 {
