@@ -91,13 +91,16 @@ paths:
             type: string
       requestBody:
         required: true
+        description: "Set the new Username"
         content:
-          application/json: {
-            example:
-              {
-                "username": "Your Username"
-              }
-          }
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  required: true
+                  description: "Your Username"
       responses:
         200:
           description: Success request

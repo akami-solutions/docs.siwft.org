@@ -1,5 +1,14 @@
 # Changes
 
+## April 09, 2024
+
+| Method                         | Changes                                                                                                                                                        |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <a href="Wallets.md"></a>      | <ul><li>Added Information Banner about the new Caching System</li><li>Replaced the endpoints for better readability</li><li>Fixed empty body example</li></ul> |
+| <a href="WalletHub.md"></a>    | <ul><li>Added Information Banner about the new Caching System</li><li>Replaced the endpoints for better readability</li></ul>                                  |
+| <a href="Transactions.md"></a> | Removed new Endpoint Banner from the Endpoints that already exists longer than 2 Months                                                                        |
+
+
 ## April 04, 2024
 
 | Method                    | Changes                     |
