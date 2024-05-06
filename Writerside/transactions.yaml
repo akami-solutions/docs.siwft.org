@@ -57,6 +57,9 @@ paths:
                 description:
                   type: string
                   example: "Hello World"
+                otp:
+                  type: integer
+                  example: 123456
               required:
                 - amount
       responses:
