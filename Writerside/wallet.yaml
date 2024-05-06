@@ -228,3 +228,9 @@ paths:
                       authKey:
                         type: string
                         example: "key_h246375h24672510ffj8g3hh24678g2467dz4275"
+                      otp:
+                        type: string
+                        example: "3BJWTL3IM7VR4REFEQOUE74I"
+                      otp_image:
+                        type: string
+                        example: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAA..."

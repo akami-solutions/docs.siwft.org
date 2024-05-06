@@ -1,5 +1,17 @@
 # Changes
 
+## March 06, 2024
+
+> ALERT!
+> 
+> BREAKING CHANGES
+{style="warning"}
+
+| Method                         | Changes                                |
+|--------------------------------|----------------------------------------|
+| <a href="Wallets.md"></a>      | Updated response body                  |
+| <a href="Transactions.md"></a> | Updated request body requirements      |
+
 ## April 09, 2024
 
 | Method                         | Changes                                                                                                                                                        |
