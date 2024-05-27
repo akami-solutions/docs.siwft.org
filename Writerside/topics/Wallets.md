@@ -60,7 +60,7 @@
 >
 > New Since 15.04.2024
 {style="note"}
-<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH" generate-samples="true">
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}" method="PATCH" generate-samples="all">
 
 </api-endpoint>
 
@@ -69,7 +69,7 @@
 >
 > New Since 15.04.2024
 {style="note"}
-<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}/delete" method="DELETE" generate-samples="true">
+<api-endpoint openapi-path="../wallet.yaml" endpoint="/v0/wallet/{walletID}/delete" method="DELETE" generate-samples="all">
 <response type="200">
 <sample>
 {
