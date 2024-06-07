@@ -13,7 +13,40 @@ info:
 servers:
   - url: https://api.siwft.org
 paths:
-  /v0/hub/{hubID}:
+  /v0/hub/{hubId}/delete:
+    delete:
+      summary: Delete a wallet Hub
+      parameters:
+        - in: path
+          name: hubId
+          description: The Hub ID you want to delete
+          required: true
+          schema:
+            type: string
+        - in: header
+          name: Authorization
+          description: You authorization key of you wallet hub.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfully
+        '204':
+          description: Successfully
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                item:
+                  properties:
+                    message:
+                      type: string
+                    code:
+                      type: integer
+  /v0/hub/{hubId}:
     get:
       summary: Get Hub Information
       description: Get Information's about an specific Wallet Hub. If you want more Information's like the Contact Address or API Key then please specify your API Key in the Header
@@ -72,8 +105,6 @@ paths:
                       created:
                         type: string
                         format: 'date-time'
-
-
   /v0/hub/create:
     post:
       summary: Create a new Hub
