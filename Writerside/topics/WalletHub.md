@@ -26,7 +26,7 @@
 
 ## Get a Wallet Hub
 
-<api-endpoint openapi-path="../hub.yaml" endpoint="/v0/hub/{hubID}" method="GET">
+<api-endpoint openapi-path="../hub.yaml" endpoint="/v0/hub/{hubId}" method="GET">
     <response type="200">
         <sample>
 {
@@ -43,4 +43,10 @@
 }
         </sample>
     </response>
+</api-endpoint>
+
+## Delete a Wallet Hub
+
+
+<api-endpoint openapi-path="../hub.yaml" endpoint="/v0/hub/{hubId}/delete" method="DELETE">
 </api-endpoint>
