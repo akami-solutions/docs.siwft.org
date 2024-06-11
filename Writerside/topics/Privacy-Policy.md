@@ -1,5 +1,14 @@
 # SIWFT Privacy Policy
 
+## Contact Informations
+Connor Darius Mally
+
+<a href="mailto:contact@akami-solutions.cc">contact@akami-solutions.cc</a>
+
+1210 Wien
+
+Österreich
+
 ## Data we collect
 
 ### We collect the following data about you:
